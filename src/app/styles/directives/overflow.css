@@ -1,0 +1,39 @@
+fs-overflow:not(.show) {
+    position: relative;
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    align-items: baseline;
+}
+
+fs-overflow:not(.show) .fs-overflow-wrap {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+fs-overflow:after,
+fs-overflow .fs-overflow-wrap:after {
+    content: '-';
+    display: inline-block;
+    visibility: hidden;
+}
+
+fs-overflow.has-more .fs-overflow-wrap {
+	width: auto;
+	position: relative;
+}
+
+fs-overflow .more-toggle {
+	padding-left: 5px;
+	transform: scale(.9);
+}
+
+

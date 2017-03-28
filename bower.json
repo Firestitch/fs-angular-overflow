@@ -1,0 +1,17 @@
+{
+  "name": "fs-angular-overflow",
+  "description": "",
+  "main": [
+    "dist/overflow.js",
+    "dist/overflow.css"
+  ],
+  "authors": [
+    "Firestitch Inc."
+  ],
+  "license": "MIT",
+  "ignore": [
+    "src",
+    ".gitignore"
+  ],
+  "private": false
+}
